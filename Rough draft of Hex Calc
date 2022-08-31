@@ -1,0 +1,25 @@
+/*    vector<string> hex_letters = {"A","B","C","D","E","F"};
+    stringstream hex(int x){
+        string hex_num = "";
+        while(x>0){
+            int hex_digit = x%16;
+            string hex_letter ="";
+            if(hex_digit>=10 && hex_digit<=15){
+                for(int i =0; i<hex_letters.size(); i++){
+                    if(hex_digit == i+10) hex_letter = hex_letters[i];
+                }
+                hex_num+=hex_letter;
+                
+            }
+            else
+                hex_num+=hex_digit;
+        }
+        vector<string> new_String;
+        string output ="";
+        for(int i = hex_num.length(); i>0; i--)
+            output+=hex_num[i];
+        stringstream final_out;
+        final_out<< "0x"<<output;
+        return final_out;
+    }
+*/
